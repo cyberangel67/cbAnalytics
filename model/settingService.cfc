@@ -30,8 +30,6 @@ component extends="contentbox.model.system.SettingService" accessors="true" sing
 		var props = {name = "ga_settings", value = serializeJson(setting)};
 
 		arrayAppend( aSettings, new(properties=props) );
-
-		writeDump(aSettings); abort;
 		saveAll( aSettings );
 	}
 
